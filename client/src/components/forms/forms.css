@@ -1,0 +1,106 @@
+.login-container,
+.register-container {
+    width: 650px;
+    padding: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--surface);
+    border-radius: 8px;
+}
+
+.logo-container {
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-section {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    gap: 8px;
+}
+
+.logo-text h1 {
+    font-size: 38px;
+    line-height: 1.5rem;
+}
+
+.logo-text p {
+    font-size: 16px;
+    line-height: 1.3rem;
+    text-align: left;
+    color: var(--text-secondary);
+}
+
+.pass-inp {
+    padding-right: 38px;
+    /* Space for the eye icon */
+}
+
+.eye-btn {
+    width: fit-content;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.eye-btn:hover {
+    color: var(--primary-color);
+    border: none;
+
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+input:active,
+input:focus {
+    border: 2px solid var(--hover);
+}
+
+label {
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+}
+
+.form-container {
+    width: 100%;
+    padding: 16px 0;
+}
+
+.form-container h1 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.new-here-section {
+    padding: 8px 0;
+}
+
+.pass-inp-container {
+    position: relative;
+}
