@@ -31,7 +31,8 @@
   /* Status Colors */
   --success: #22c55e98;
   --success-border: #22C55E;
-  --warning: #F59E0B;
+  --warning: #f59f0b1f;
+  --warning-border: #F59E0B;
   --danger-border: #EF4444;
   --danger: #ef444499;
   --info: #0EA5E9;

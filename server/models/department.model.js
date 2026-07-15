@@ -8,16 +8,6 @@ const departmentSchema = new mongoose.Schema({
         trim: true
     },
 
-    code: {
-        type: String,
-        required: true,
-        unique: true
-    },
-
-    description: {
-        type: String
-    },
-
     managerId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Employee",

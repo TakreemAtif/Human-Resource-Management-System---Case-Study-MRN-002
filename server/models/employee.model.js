@@ -1,7 +1,7 @@
-import mongoose from "mongoose";
+import mongoose, { Mongoose } from "mongoose";
 
 const employeeSchema = new mongoose.Schema({
-    employeeCode: {
+    userId: {
         type: String,
         required: true,
         unique: true
@@ -19,29 +19,67 @@ const employeeSchema = new mongoose.Schema({
         trim: true
     },
 
-    email: {
+    cnic: {
         type: String,
         required: true,
-        lowercase: true,
         trim: true
     },
 
     phone: {
         type: String
     },
+    address: {
+        type: String,
+        trim: true
+    },
 
     gender: {
         type: String,
-        enum: ['Male', 'Female', 'Other']
+        enum: ['Male', 'Female'],
+        required: true
     },
 
     dateOfBirth: {
         type: Date
     },
-
-    joiningDate: {
+    departmentId: {
+        type: mongoose.Types.ObjectId,
+        ref: 'Department',  
+    },
+    designationId: {
+        type: mongoose.Types.ObjectId,
+        ref: 'Designation',  
+    },
+    managerId: {
+        type: mongoose.Types.ObjectId,
+        ref: 'Employee',
+    },
+    employmentType: {
+        type: String,
+        enum: ['Full-Time', 'Intern', 'Contract'],
+        required: true,
+        default: 'Full-Time'
+    },
+    skills: {
+        type: Array
+    },
+    certification: {
+        type: Array,
+    },
+    documentsUrl:{
+        type: Array
+    },
+    status: {
+        type: String,
+        enum: ['active', 'on-leave', 'resigned', 'terminated']
+    },
+    joinDate: {
         type: Date,
         default: Date.now
+    },
+    exitDate: {
+        type: Date,
+        default: null
     }
 }, {
     timestamps: true

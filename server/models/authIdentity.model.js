@@ -53,6 +53,10 @@ const authIdentitySchema = new mongoose.Schema({    // It is same as common user
             message: '{VALUE} is not a valid status'        // Return this message if value that is passed is active, suspended or deactivated
         },
         default: 'active'
+    },
+    otp:{
+        type: Object,
+        default: null
     }
 }, {
     timestamps: true // Automatically manages createdAt and updatedAt fields
