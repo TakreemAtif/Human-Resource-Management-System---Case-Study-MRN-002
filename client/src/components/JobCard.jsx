@@ -117,7 +117,7 @@ function JobCard({ JobData, canEdit, departments = [], designations = [], onSave
             <span className="job-card-eyebrow">{JobData.departmentId?.name}</span>
             <h1>{JobData.designationId?.title}</h1>
             <p className="job-card-desc">{truncateWords(JobData.description)}</p>
-
+            <a href="/apply">Apply Now</a>
             <div className="status-bar">
                 <span className={`job-status job-status--${JobData.status}`}>
                     {JobData.status}

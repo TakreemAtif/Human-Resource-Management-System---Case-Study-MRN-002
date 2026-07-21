@@ -271,3 +271,7 @@
 {"durationMs":10,"level":"info","message":"request","method":"GET","path":"/api/auth/me","role":"SuperAdmin","status":304,"timestamp":"2026-07-20T14:36:04.216Z","userId":"6a5de3c25223dd87352e48ea"}
 {"durationMs":5,"level":"info","message":"request","method":"GET","path":"/api/auth/me","role":"SuperAdmin","status":304,"timestamp":"2026-07-20T14:36:24.180Z","userId":"6a5de3c25223dd87352e48ea"}
 {"durationMs":7,"level":"info","message":"request","method":"GET","path":"/api/auth/me","role":"SuperAdmin","status":304,"timestamp":"2026-07-20T14:37:00.999Z","userId":"6a5de3c25223dd87352e48ea"}
+{"durationMs":47,"level":"info","message":"request","method":"GET","path":"/api/auth/me","role":"SuperAdmin","status":304,"timestamp":"2026-07-21T08:08:32.419Z","userId":"6a5de3c25223dd87352e48ea"}
+{"durationMs":4166,"level":"info","message":"request","method":"POST","path":"/api/auth/login","role":null,"status":200,"timestamp":"2026-07-21T08:08:52.070Z","userId":null}
+{"durationMs":14,"level":"info","message":"request","method":"POST","path":"/api/auth/verify-otp","role":"SuperAdmin","status":200,"timestamp":"2026-07-21T08:09:29.366Z","userId":"6a5de3c25223dd87352e48ea"}
+{"durationMs":8,"level":"info","message":"request","method":"GET","path":"/api/auth/me","role":"SuperAdmin","status":200,"timestamp":"2026-07-21T08:22:38.279Z","userId":"6a5de3c25223dd87352e48ea"}

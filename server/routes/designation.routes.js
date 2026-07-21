@@ -4,7 +4,7 @@ import Designation from '../models/Designation.model.js';
 
 const designationRouter = Router();
 
-designationRouter.post('/Designation/create', authenticate, authorize(['SuperAdmin', 'HRAdmin']), async (req, res) => {
+designationRouter.post('/designation/create', authenticate, authorize(['SuperAdmin', 'HRAdmin']), async (req, res) => {
     try{
         const {title, departmentId} = req.body;
         const newDesignation = new Designation({

@@ -16,6 +16,7 @@ import employeeRouter from "./routes/employee.routes.js";
 import departmentRouter from './routes/department.routes.js';
 import designationRouter from './routes/designation.routes.js';
 import jobRouter from "./routes/job.routes.js";
+import candidateRouter from "./routes/candidate.routes.js";
 
 dotenv.config()
 
@@ -45,11 +46,12 @@ app.use(helmet());
 // app.use(limiter);
 app.use(requestLogger);
 
-app.use('/api', authRouter);
-app.use('/api', employeeRouter);
-app.use('/api', departmentRouter);
-app.use('/api', designationRouter);
-app.use('/api', jobRouter);
+app.use('/api/auth', authRouter);
+app.use('/api/employee', employeeRouter);
+app.use('/api/department', departmentRouter);
+app.use('/api/designation', designationRouter);
+app.use('/api/job', jobRouter);
+app.use('/api/candidate', candidateRouter);
 
 app.get('/', (req, res) => {
     res.status(200).json({message: "Hello World!"});
